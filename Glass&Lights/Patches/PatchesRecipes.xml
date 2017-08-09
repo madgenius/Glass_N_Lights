@@ -1,0 +1,48 @@
+<Patch>
+	<Operation Class="PatchOperationSequence">
+		<success>Always</success>
+		<operations>
+			<!--
+			<li Class="PatchOperationTest">
+				<xpath>*/ThingDef[defName = "SandPile"]</xpath>
+			</li>
+			-->
+			<!-- <li Class="CheckForFertileFieldsSandPile.PatchOperationTestFertileFieldsSandPile"></li> -->
+			<li Class="PatchOperationIsModActive.PatchOperationIsModActive">
+				<mod>[RF] Fertile Fields [a17]</mod>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeGlass"]/ingredients/li/filter/categories</xpath>
+				<value>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeGlass"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeCircularGlass"]/ingredients/li/filter/categories</xpath>
+				<value>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</value>
+			</li>
+			<li Class="PatchOperationReplace">
+				<xpath>*/RecipeDef[defName = "MakeCircularGlass"]/fixedIngredientFilter/categories</xpath>
+				<value>
+					<thingDefs>
+						<li>SandPile</li>
+					</thingDefs>
+				</value>
+			</li>
+		</operations>
+	</Operation>
+</Patch>
