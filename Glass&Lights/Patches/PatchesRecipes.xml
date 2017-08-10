@@ -7,7 +7,6 @@
 				<xpath>*/ThingDef[defName = "SandPile"]</xpath>
 			</li>
 			-->
-			<!-- <li Class="CheckForFertileFieldsSandPile.PatchOperationTestFertileFieldsSandPile"></li> -->
 			<li Class="PatchOperationIsModActive.PatchOperationIsModActive">
 				<mod>[RF] Fertile Fields [a17]</mod>
 			</li>
